@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--GOOGLE FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+	<!--CUSTOM CSS-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Langleyz</title>
+</head>
+
+<!--JSSOR-->
+<script type="text/javascript">
+	jssor_1_slider_init = function() {
+
+		var jssor_1_options = {
+		  $AutoPlay: 1,
+		  $AutoPlaySteps: 4,
+		  $SlideDuration: 160,
+		  $SlideWidth: 200,
+		  $SlideSpacing: 3,
+		  $Cols: 5,
+		  $Align: 390,
+		  $ArrowNavigatorOptions: {
+			$Class: $JssorArrowNavigator$,
+			$Steps: 5
+		  },
+		  $BulletNavigatorOptions: {
+			$Class: $JssorBulletNavigator$
+		  }
+		};
+
+		var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+		/*#region responsive code begin*/
+
+		var MAX_WIDTH = 1500;
+
+		function ScaleSlider() {
+			var containerElement = jssor_1_slider.$Elmt.parentNode;
+			var containerWidth = containerElement.clientWidth;
+
+			if (containerWidth) {
+
+				var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+				jssor_1_slider.$ScaleWidth(expectedWidth);
+			}
+			else {
+				window.setTimeout(ScaleSlider, 30);
+			}
+		}
+
+		ScaleSlider();
+
+		$Jssor$.$AddEvent(window, "load", ScaleSlider);
+		$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+		$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+		/*#endregion responsive code end*/
+	};
+</script>
+
+<body>
+	<header class="header">
+		<!--<div class="header__outer-navigation">
+			<ul class="header__outer-navigation-list">
+				<li>About BK®</li>
+				<li>BK® for Kids</li>
+				<li><img src="img/icons8_Marker_15px.png">Find Your BK® Location</li>
+				<li>Get the BK® App</li>
+				<li>Food Quality</li>
+			</ul>
+		</div>-->
+		<div class="header__inner-navigation">
+			<div class="header__inner-navigation-logo">
+				<a href="index.html"><img src="img/festisite_burger-king.png" alt=""></a>
+			</div>
+			<div class="header__inner-navigation-list">
+				<ul class="header__inner-navigation-list-list">
+					<li><a href="menu.html">MENU</a></li>
+					<!--<li>Great Fresh Offers </li>-->
+					<!--<li>Your BK® <span>Locator</span><img src="img/icons8_Marker_30px.png"></li>-->
+					<!--<li>Your BK® <span>Locator</span><img src="img/icons8_Marker_30px.png"></li>-->
+					<!--<li>Site <span>Search</span><img src="img/icons8_Search_30px.png"></li>-->
+					<li><a href="lacafe.html">LaCafé</a></li>
+					<li><a href="choices.html">HEALTHIER CHOICE</a></li>
+					<li><a href="delivery.html">DELIVERY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header__image-slider">
+			<img class="mySlides" src="img/1800x760-BKL-Summer-banner-20170612-safearea-B013.jpg"><a href="">Check it out</a>
+			<img class="mySlides" src="img/1800x760-BKL-KING BOX Banner safe area-F.jpg"><a href="">Check it out</a>
+			<img class="mySlides" src="img/BKL_WEB_1800x760_Sep KING SAVERS BANNER safe area.jpg"><a href="">Check it out</a>
+			<img class="mySlides" src="img/BKL-WEB-1800x760-Long Banner safe area-F2.jpg"><a href="">Check it out</a>
+
+			<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:90%; top: 90%;">
+				<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="font-size:5rem; margin-top:-25%;">&#10094;</div>
+				<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)" style="font-size:5rem; margin-top:-25%;">&#10095;</div>
+					<span class="w3-badge demo w3-border w3-transparent .custom" onclick="currentDiv(1)"></span>
+					<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+					<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+					<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+			</div>
+		</div>
+	</header>
+
+	<section class="choices">
+		<div class="row">
+			<!--<div class="choices__main">
+				<div class="choices__main-topLeft">
+					<img src="img/click-collect-half.jpg" alt="">
+					<div class="choices__main-topLeft-textBox">
+						<h2>Click &#38; Collect</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam error maiores, consequatur possimus dolorem blanditiis temporibus omnis ab commodi. Reprehenderit iure placeat cum eos doloribus veritatis corrupti tempore natus vero?</p>
+						<button type="submit">FIND OUT MORE</button>
+					</div>
+				</div>
+				<div class="choices__main-topRight">
+					<img src="img/meals-under-half.jpg" alt="">
+					<div class="choices__main-topRight-textBox">
+						<h2>Meals Under 400kcal or 600kcal</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit asperiores,</p> 
+						<button type="submit">FIND OUT MORE</button>
+					</div>
+				</div>
+				<div class="choices__main-bottomLeft">
+					<img src="img/deals-half.jpg" alt="">
+					<div class="choices__main-bottomLeft-textBox">
+						<h2>See our latest Deals</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aspernatur sit laboriosam reiciendis, quasi quia quos et unde perspiciatis asperiores, veritatis dolore blanditiis. Vero ea porro fugit exercitationem. Voluptatem, repellat.</p>
+						<button type="submit">SEE MORE</button>
+					</div>
+				</div>
+				<div class="choices__main-bottomRight">
+					<div class="main-bottomRightForm">
+						<div class="main-bottomRightForm-textBox">
+						<p>* Required fields</p>
+						<p>Want more?</p>
+						<h2>Join us</h2>
+						<p>Give us your details to get all the latest burger news, seasonal updates and exclusive competitions via our newsletter.</p>
+					</div>
+					
+					<form action="" class="main-bottomRightForm-main">
+						<div class="main-bottomRightForm-login">
+							<div class="main-bottomRightForm-left">
+								<label for="email">Email</label>
+								<input id="email" type="email" required>
+							</div>
+			
+							<div class="main-bottomRightForm-right">
+								<label for="postcode">Postcode</label>
+								<input id="postcode" type="text" required>
+							</div>
+						</div>
+							
+						<div class="main-bottomRightForm-checkboxTop">
+							<input type="checkbox">
+							<label for="">By submitting I agree to the Terms & Conditions and Privacy Policy *</label>	
+						</div>
+
+						<div class="main-bottomRightForm-checkboxBottom">
+							<input type="checkbox">	
+							<label for="">I am 18 or over *</label>
+						</div>
+
+						<button type="submit">SUBMIT</button>
+							<p>By clicking 'submit' you agree to receive emails, promotions, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis temporibus odit sequi iure voluptates voluptatibus repellendus, corporis nisi atque autem blanditiis, culpa doloribus vel velit qui officia. Ipsa, eum.</p>
+					</form>
+				</div>
+			</div>-->
+		</div>
+	</section>
+<!--
+	<section class="findUs">
+			<div class="map"></div>
+			<div class="row">
+				<div class="container"></div>
+			</div>
+	</section>
+-->	
+	<section class="join">
+		<div class="row">
+			<div class="join__textbox">
+				<div class="join__textbox-heading">
+					<h2>JOIN THE LANGLEYZ®<br> FAN KINGDOM </h2>
+				</div>
+
+				<div class="join__textbox-social">
+					<ul class="join__textbox-social-list">
+						<!--<li><a href=""><img src="img/icons8_Facebook_Like_15px.png">Like</a></li>
+						<li><a href=""><img src="img/icons8_Twitter_15px.png">Follow</a></li>
+						<li><a href=""><img src="img/icons8_Instagram_Old_15px.png">Follow</a></li>-->
+						<li><a href="http://www.facebook.com"><img src="img/icons8_Facebook_Like_15px.png">Like</a></li>
+						<li><a href="http://www.twitter.com"><img src="img/icons8_Twitter_15px.png">Follow</a></li>
+						<li><a href="http://www.instagram.com"><img src="img/icons8_Instagram_Old_15px.png">Follow</a></li>
+					</ul>
+				</div>
+
+				<div class="join__textbox-paragraph">
+					<p class="join__textbox-paragraph-paragraph">follow your taste buds</p>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+	<section class="break">
+		<img src="img/L_coffee.jpg" alt="">
+			<div class="break__textbox">
+					<div class="break__textbox-heading">
+						<h2>TAKE A BREAK FROM BOREDOM</h2>
+					</div>
+
+					<div class="break__textbox-paragraph">
+						<p class="break__textbox-paragraph-paragraph">swipe it, flip it, share it</p>
+					</div>
+			</div>
+		<img src="img/R_strawberry.jpg" alt="">
+	</section>
+
+	<section class="delivers">
+			<div class="delivers__textbox">
+				<div class="delivers__textbox-heading">
+					<h2>LANGLEYZ delivers</h2>
+				</div>
+	
+			<div class="delivers__textbox-paragraph">
+				<p class="delivers__textbox-paragraph-paragraph">HAVE YOUR ORDER BROUGHT TO YOU</p>
+			</div>
+				<button type="submit"><a href="delivery.html">FIND LOCATIONS</a></button>
+			</div>
+	</section>
+
+	<section class="bacon">
+		<div class="row">
+			<div class="bacon__container">
+				<div class="bacon__container-left">
+					<h2>LANGLEYZ® KIDS</h2>
+					<button type="submit"><a href="menu.html">FIND STUFF</a></button>
+				</div>
+				<!--<div class="bacon__container-middle">
+					<h2>GUEST TRAC</h2>
+					<button type="submit"><a href="contact.html">YOUR OPINION MATTERS</a></button>
+				</div>-->
+				<div class="bacon__container-right">
+					<h2>CONTACT LANGLEYZ®</h2>
+					<button type="submit"><a href="contact.html">GET IN TOUCH</a></button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="followUs">
+		<div class="row">
+			<div class="followUs-heading">
+				<h2>Follow Us</h2>
+			</div>
+		</div>
+			
+		<div class="followUs-images">
+			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:500px;height:150px;overflow:hidden;visibility:hidden;">
+						<!-- Loading Screen -->
+						
+					<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+						<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+					</div>
+
+					<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:500px;height:150px;overflow:hidden;">
+						<div>
+							<img data-u="image" src="img/1800x760-BKL-Summer-banner-20170612-safearea-B013.jpg" />
+						</div>
+							
+						<div>
+							<img data-u="image" src="img/1800x760-BKL-KING BOX Banner safe area-F.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/BKL_WEB_1800x760_Sep KING SAVERS BANNER safe area.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/BKL-WEB-1800x760-Long Banner safe area-F2.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/click-collect-half.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/meals-under-half.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/deals-half.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/1800x760-BKL-Summer-banner-20170612-safearea-B013.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/1800x760-BKL-KING BOX Banner safe area-F.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/BKL_WEB_1800x760_Sep KING SAVERS BANNER safe area.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/BKL-WEB-1800x760-Long Banner safe area-F2.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/click-collect-half.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/meals-under-half.jpg" />
+						</div>
+						<div>
+							<img data-u="image" src="img/deals-half.jpg" />
+						</div>
+							
+						</div>
+						<!-- Bullet Navigator -->
+						<div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+							<div data-u="prototype" class="i" style="width:16px;height:16px;">
+								<!--<svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+									<circle class="b" cx="8000" cy="8000" r="5000"></circle>
+								</svg>-->
+							</div>
+						</div>
+						<!-- Arrow Navigator -->
+						<div data-u="arrowleft" class="jssora073" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+							<!--<svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:50%;height:100%;">
+								<path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
+							</svg>-->
+
+							<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="font-size:2rem; margin-top:-25%; color:#fff;">&#10094;</div>
+						</div>
+						<div data-u="arrowright" class="jssora073" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+							<!--<svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:50%;height:100%;">
+								<path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
+							</svg>-->
+							<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)" style="font-size:2rem; margin-top:-25%; color:#fff;">&#10095;</div>
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<footer class="footer">
+			<div class="row">
+				<div class="footer__top-navigation">
+					<ul class="footer__top-navigation-list">
+						<li><a>Contact Us</a></li>
+						<li><a>Careers</a></li>
+						<!--<li><a>News Sites</a></li>-->
+						<!--<li><a>Newsroom</a></li>-->
+						<!--<li><a>What makes Mcdonald's</a></li>-->
+						<!--<li><a>Franchising</a></li>-->	
+					</ul>
+					<ul class="footer__middle-navigation-left-list">
+						<li>Stay Connected</li>
+						<li><a><img src="img/icons8_Facebook_40px.png"></a></li>
+						<li><a><img src="img/icons8_Twitter_Squared_40px.png"></a></li>
+						<li><a><img src="img/icons8_YouTube_40px.png"></a></li>	
+					</ul>
+
+				</div>
+			</div>
+<!--
+			<div class="footer__middle-navigation">
+				<div class="row">
+					<div class="footer__middle-navigation-main-list">
+						<ul class="footer__middle-navigation-left-list">
+							<li>Stay Connected</li>
+							<li><a><img src="img/icons8_Facebook_40px.png"></a></li>
+							<li><a><img src="img/icons8_Twitter_Squared_40px.png"></a></li>
+							<li><a><img src="img/icons8_YouTube_40px.png"></a></li>	
+						</ul>-->
+
+						<!--<ul class="footer__middle-navigation-right-list">
+							<li>Get the McDonald's App</li>
+							<li><a><img src="img/logo-apple.png"></a></li>
+							<li><a><img src="img/logo-google.png"></a></li>
+						</ul>-->
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__bottom-navigation">
+				<div class="row">
+					<div class="footer__bottom-navigation-main">
+						<ul class="footer__bottom-navigation-list">
+							<li><a>PRIVACY POLICY</a></li>
+							<li><a>TERMS & CONDITIONS</a></li>
+							<li><a>COOKIE POLICY</a></li>
+							<li><a>UK MODERN SLAVERY ACT</a></li>
+						</ul>
+						
+						<div class="footer__copyright">
+							<p> &#9400;2018 All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jssor.slider.min.js"></script>
+	<script type="text/javascript">jssor_1_slider_init();</script>
+	<script src="js/script.js"></script>	
+</body>
+
+
+
+
+</html>

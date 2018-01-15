@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--GOOGLE FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+	<!--CUSTOM CSS-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Delivery</title>
+	
+</head>
+
+<script type="text/javascript">
+	jssor_1_slider_init = function() {
+
+		var jssor_1_SlideshowTransitions = [
+		  {$Duration:1200,$Opacity:2}
+		];
+
+		var jssor_1_options = {
+		  $AutoPlay: 1,
+		  $SlideshowOptions: {
+			$Class: $JssorSlideshowRunner$,
+			$Transitions: jssor_1_SlideshowTransitions,
+			$TransitionsOrder: 1
+		  },
+		  $ArrowNavigatorOptions: {
+			$Class: $JssorArrowNavigator$
+		  },
+		  $BulletNavigatorOptions: {
+			$Class: $JssorBulletNavigator$
+		  }
+		};
+
+		var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+		/*#region responsive code begin*/
+
+		var MAX_WIDTH = 980;
+
+		function ScaleSlider() {
+			var containerElement = jssor_1_slider.$Elmt.parentNode;
+			var containerWidth = containerElement.clientWidth;
+
+			if (containerWidth) {
+
+				var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+				jssor_1_slider.$ScaleWidth(expectedWidth);
+			}
+			else {
+				window.setTimeout(ScaleSlider, 30);
+			}
+		}
+
+		ScaleSlider();
+
+		$Jssor$.$AddEvent(window, "load", ScaleSlider);
+		$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+		$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+		/*#endregion responsive code end*/
+	};
+</script>
+<style>
+	/* jssor slider loading skin spin css */
+	.jssorl-009-spin img {
+		animation-name: jssorl-009-spin;
+		animation-duration: 1.6s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	@keyframes jssorl-009-spin {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+
+	.jssorb051 .i {position:absolute;cursor:pointer;}
+	.jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+	.jssorb051 .i:hover .b {fill-opacity:.7;}
+	.jssorb051 .iav .b {fill-opacity: 1;}
+	.jssorb051 .i.idn {opacity:.3;}
+
+	.jssora051 {display:block;position:absolute;cursor:pointer;}
+	.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+	.jssora051:hover {opacity:.8;}
+	.jssora051.jssora051dn {opacity:.5;}
+	.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+</style>
+
+<body>
+	<header class="delivery-header">
+		<div class="delivery__inner-navigation">
+			<div class="delivery__inner-navigation-logo">
+                <a href="index.html"><img src="img/festisite_burger-king.png" alt=""></a>
+			</div>
+			<div class="delivery__inner-navigation-list">
+				<ul class="delivery__inner-navigation-list-list">
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="lacafe.html">LaCafé</a></li>
+					<li><a href="choices.html">HEALTHIER CHOICE</a></li>
+					<li><a href="">DELIVERY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+
+	<section class="delivery">
+		<div class="row">
+			<div class="delivery__textbox">
+				<h2><span>We Deliver</span><br>Order with UberEATS</h2>
+				<p>For all those late-night, early-morning, last-minute moments and the times you can't get to us, we now deliver to you from selected restaurants.</p>
+				<img src="img/festisite_burger-king.png">
+			</div>
+		</div>
+	</section>
+	
+
+
+
+			<!--<div class="header__image-slider">
+					<img class="mySlides" src="img/1800x760-BKL-Summer-banner-20170612-safearea-B013.jpg"><a href="">Check it out</a>
+					<img class="mySlides" src="img/1800x760-BKL-KING BOX Banner safe area-F.jpg"><a href="">Check it out</a>
+					<img class="mySlides" src="img/BKL_WEB_1800x760_Sep KING SAVERS BANNER safe area.jpg"><a href="">Check it out</a>
+					<img class="mySlides" src="img/BKL-WEB-1800x760-Long Banner safe area-F2.jpg"><a href="">Check it out</a>
+		
+					<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:90%; top: 90%;">
+						<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="font-size:5rem; margin-top:-25%;">&#10094;</div>
+						<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)" style="font-size:5rem; margin-top:-25%;">&#10095;</div>
+							<span class="w3-badge demo w3-border w3-transparent .custom" onclick="currentDiv(1)"></span>
+							<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+							<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+							<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+					</div>
+				</div>-->
+				<!--<div class="row">-->
+					<!--<div class="delivery__postcode-list">
+						<ul class="delivery__postcode-list-list">
+							<li><a href="">MENU</a></li>
+							<li><a href="">SIGN IN</a></li>
+							<li><a href="">SIGN UP</a></li>
+						</ul>
+					</div>-->
+					<!--<div class="delivery__postcode">
+						<div class="delivery__postcode-logo">
+							<a href="index.html"><img src="img/festisite_burger-king.png" alt=""></a>
+						</div>
+						<div class="delivery__postcode-input">
+							<input type="text">
+							<button>></button>
+						</div>
+						<div class="delivery__postcode-bag">
+							<h3><a href="index.html">YOUR BAG</a></h3>
+						</div>
+					</div>
+				</div>-->
+				
+				<!--<div  class="delivery__postcode-images">-->
+				<!--<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:800px;height:380px;overflow:hidden;visibility:hidden;">-->
+						<!-- Loading Screen -->
+						<!--<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+							<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+						</div>
+						<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:800px;height:380px;overflow:hidden;">
+							<div>
+								<img data-u="image" src="img/1800x760-BKL-Summer-banner-20170612-safearea-B013.jpg" />
+							</div>
+							<div>
+								<img data-u="image" src="img/1800x760-BKL-KING BOX Banner safe area-F.jpg" />
+							</div>
+							<div>
+								<img data-u="image" src="img/BKL_WEB_1800x760_Sep KING SAVERS BANNER safe area.jpg" />
+							</div>
+							<div>
+								<img data-u="image" src="img/BKL-WEB-1800x760-Long Banner safe area-F2.jpg" />
+							</div>	
+						</div>-->
+						<!-- Bullet Navigator -->
+						<!--<div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+							<div data-u="prototype" class="i" style="width:16px;height:16px;">
+								<svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+									<circle class="b" cx="8000" cy="8000" r="5800"></circle>
+								</svg>
+							</div>
+						</div>-->
+						<!-- Arrow Navigator -->
+						<!--<div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+							<svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+								<polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+							</svg>
+						</div>
+						<div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+							<svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+								<polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="delivery__bottom-heading">
+						<h2><a href="menu.html">START YOUR ORDER TODAY ></a></h2>
+				</div>-->
+	
+	<!--<div id="map"></div>-->
+				
+	<footer class="footer">
+		<div class="row">
+			<div class="footer__top-navigation">
+				<ul class="footer__top-navigation-list">
+					<li><a>Contact Us</a></li>
+					<li><a>Careers</a></li>
+					<!--<li><a>News Sites</a></li>-->
+					<!--<li><a>Newsroom</a></li>-->
+					<!--<li><a>What makes Mcdonald's</a></li>-->
+					<!--<li><a>Franchising</a></li>-->	
+				</ul>
+				<ul class="footer__middle-navigation-left-list">
+					<li>Stay Connected</li>
+					<li><a><img src="img/icons8_Facebook_40px.png"></a></li>
+					<li><a><img src="img/icons8_Twitter_Squared_40px.png"></a></li>
+					<li><a><img src="img/icons8_YouTube_40px.png"></a></li>	
+				</ul>
+
+			</div>
+		</div>
+<!--
+		<div class="footer__middle-navigation">
+			<div class="row">
+				<div class="footer__middle-navigation-main-list">
+					<ul class="footer__middle-navigation-left-list">
+						<li>Stay Connected</li>
+						<li><a><img src="img/icons8_Facebook_40px.png"></a></li>
+						<li><a><img src="img/icons8_Twitter_Squared_40px.png"></a></li>
+						<li><a><img src="img/icons8_YouTube_40px.png"></a></li>	
+					</ul>-->
+
+					<!--<ul class="footer__middle-navigation-right-list">
+						<li>Get the McDonald's App</li>
+						<li><a><img src="img/logo-apple.png"></a></li>
+						<li><a><img src="img/logo-google.png"></a></li>
+					</ul>-->
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__bottom-navigation">
+			<div class="row">
+				<div class="footer__bottom-navigation-main">
+					<ul class="footer__bottom-navigation-list">
+						<li><a>PRIVACY POLICY</a></li>
+						<li><a>TERMS & CONDITIONS</a></li>
+						<li><a>COOKIE POLICY</a></li>
+						<li><a>UK MODERN SLAVERY ACT</a></li>
+					</ul>
+					
+					<div class="footer__copyright">
+						<p> &#9400;2018 All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+</footer>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcehlvBhxWaqfHR7yhCik-6yvT2KN_X6E&callback=initMap">
+</script>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jssor.slider.min.js"></script>
+
+<script type="text/javascript">jssor_1_slider_init();</script>
+	
+<script src="js/delivery.js"></script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
