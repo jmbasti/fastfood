@@ -25,14 +25,34 @@ $color3: rgb(241, 0, 141);
 .header__outer-navigation {
     display: flex;
 }
+/*
+.header__outer-navigation-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    list-style: none;
+    width: 40%;
+    padding: .5rem;
+    font-size: 13px;
+    color: #414042;
+}
+*/
 
 .header__inner-navigation {
     display: flex;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    //background: linear-gradient(to right, #00B6F1, #99ff00, rgb(241, 0, 141));
     background: rgba(0, 0, 0, 0.85);
     height: auto;
+    /*position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;*/
 }
 
 .header__inner-navigation-logo img {
@@ -42,36 +62,42 @@ $color3: rgb(241, 0, 141);
     @media only screen and (max-width: 1100px) {
         width: 100px;
         height: auto;
-    }
-    @media only screen and (max-width: 900px) {
+     }
+
+     @media only screen and (max-width: 900px) {
         width: 98px;
         height: auto;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+
+     @media only screen and (max-width: 800px) {
         width: 90px;
         height: auto;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+
+     @media only screen and (max-width: 800px) {
         width: 80px;
         height: auto;
-    }
-    @media only screen and (max-width: 600px) {
+     }
+
+     @media only screen and (max-width: 600px) {
         width: 55px;
         height: auto;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+
+     @media only screen and (max-width: 500px) {
         width: 50px;
         height: auto;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         width: 30px;
         height: auto;
-    }
+     }
 }
 
 .header__inner-navigation-list {
     width: 45%;
     margin-left: 2rem;
+
     @media only screen and (max-width: 1400px) {
         width: 50%;
     }
@@ -121,8 +147,10 @@ $color3: rgb(241, 0, 141);
 .header__inner-navigation-list-list li {
     font-weight: bold;
     font-size: 32px;
+    //text-shadow: 1px 2px #000;
     padding-top: .5rem;
     padding-bottom: .5rem;
+
     @media only screen and (max-width: 1100px) {
         font-size: 25px; 
     }
@@ -212,15 +240,19 @@ span:hover {
     @media only screen and (max-width: 900px) {
         display: none;
     }
+
     @media only screen and (max-width: 700px) {
         display: none;
     }
+
     @media only screen and (max-width: 600px) {
         display: none;
     }
+
     @media only screen and (max-width: 500px) {
         display: none;
     }
+
     @media only screen and (max-width: 400px) {
         display: none;
     }
@@ -246,54 +278,71 @@ span:hover {
     @media only screen and (max-width: 1400px) {
         font-size: 22px;
     }
+
     @media only screen and (max-width: 1300px) {
         font-size: 20px;
     }
+
     @media only screen and (max-width: 1200px) {
         font-size: 19px;
     }
+
     @media only screen and (max-width: 1100px) {
         font-size: 19px;
     }
+
     @media only screen and (max-width: 1000px) {
         font-size: 18px;
     }
+
     @media only screen and (max-width: 900px) {
         font-size: 17px;
     }
+
     @media only screen and (max-width: 800px) {
         font-size: 16px;
     }
+
+    
     @media only screen and (max-width: 700px) {
         font-size: 16px;
     }
+
     @media only screen and (max-width: 600px) {
         font-size: 14px;
     }
+
     @media only screen and (max-width: 500px) {
         font-size: 12px;
     }
+
     @media only screen and (max-width: 400px) {
         font-size: 12px;
     }
+
     @media only screen and (max-width: 360px) {
         font-size: 10px;
     }
 }
 
 .w3-badge {
+
     @media only screen and (max-width: 700px) {
         display: none;
     }
+
     @media only screen and (max-width: 600px) {
         display: none;
     }
+
     @media only screen and (max-width: 500px) {
         display: none;
     }
+
     @media only screen and (max-width: 400px) {
         display: none;
     }
+    
     @media only screen and (max-width: 360px) {
         display: none;
     }
@@ -311,6 +360,7 @@ span:hover {
 
 .choices__main {
     display: flex;
+    //flex-wrap: wrap;
     margin: 0 auto;
     align-content: center;
     align-items: center;
@@ -320,6 +370,260 @@ span:hover {
     padding-top: 2rem;  
 }
 
+//TOP-LEFT
+/*
+.choices__main-topLeft {
+    position: relative;
+}
+
+.choices__main-topLeft-textBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    color: #fff;
+}
+
+.choices__main-topLeft-textBox h2 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.choices__main-topLeft-textBox p {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.choices__main-topLeft-textBox button {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 5px 5px;
+    font-family: sans-serif;
+}
+
+.choices__main-topLeft-textBox button:hover {
+    cursor: pointer;
+}
+
+.choices__main-topLeft img {
+    height: 390px;
+    width: auto;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+    margin-right: 1rem;   
+}
+*/
+//TOP-RIGHT
+/*
+.choices__main-topRight {
+    position: relative;
+}
+
+.choices__main-topRight-textBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    color: #000;
+}
+
+.choices__main-topRight-textBox h2 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.choices__main-topRight-textBox p {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.choices__main-topRight-textBox button {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 5px 5px;
+    font-family: sans-serif;
+}
+    
+.choices__main-topRight-textBox button:hover {
+    cursor: pointer;
+}
+
+.choices__main-topRight img{
+    height: 390px;
+    width: auto;
+    border-radius: 3px;
+    margin-bottom: 3rem;    
+}
+*/
+//BOTTOM-LEFT
+/*
+.choices__main-bottomLeft {
+    position: relative;
+}
+
+.choices__main-bottomLeft-textBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    color: #fff;
+}
+
+.choices__main-bottomLeft-textBox h2 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.choices__main-bottomLeft-textBox p {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.choices__main-bottomLeft-textBox button {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 5px 5px;
+    font-family: sans-serif;
+}
+    
+.choices__main-bottomLeft-textBox button:hover {
+    cursor: pointer;
+}
+
+
+.choices__main-bottomLeft img{
+    height: 390px;
+    width: auto;
+    border-radius: 3px;
+    margin-right: 1rem;    
+}
+*/
+//BOTTOM-RIGHT
+/*
+.main-bottomRightForm{
+    height: 390px;
+    width: 520px;
+    border-radius: 3px;
+    background: linear-gradient(to right bottom, #00B6F1, #82c024);
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.main-bottomRightForm-textBox h2 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin-top: -.25rem;
+}
+
+.main-bottomRightForm-textBox p:nth-of-type(3) {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main-bottomRightForm-textBox p:nth-of-type(1) {
+    text-align: right;
+}
+
+.main-bottomRightForm-login {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    margin-left: 0;
+}
+
+.main-bottomRightForm-login input {
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 8px 13px;
+    border: 1px solid transparent;
+    width: 130%;
+    box-sizing: border-box;
+    outline: none; 
+}
+.main-bottomRightForm-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-bottomRightForm-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5.5rem;
+}
+
+.main-bottomRightForm-left label, .main-bottomRightForm-right label {
+    font-family: sans-serif;
+    font-size: 13px;
+    padding-bottom: .3rem; 
+}
+
+.main-bottomRightForm-checkboxTop label, .main-bottomRightForm-checkboxBottom label  {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+.main-bottomRightForm button {
+    font-family: sans-serif;
+    background: grey;
+    border: 2px solid transparent;
+    color: #fff;
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 8px 13px;
+    width: 40%;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.main-bottomRightForm button:hover {
+    cursor: pointer;
+}
+
+.main-bottomRightForm p {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+*/
 /*--------------------------------------------------FOLLOW US SECTION--------------------------------------------*/
 
 .followUs {
@@ -337,40 +641,9 @@ span:hover {
     letter-spacing: 2px;
     font-size: 35px;
     padding-bottom: 2rem;
-
-    @media only screen and (max-width: 1300px) {
-        font-size: 35px; 
-    }
-
-    @media only screen and (max-width: 1200px) {
-        font-size: 34px;   
-    }
-    @media only screen and (max-width: 1100px) {
-        font-size: 33px;  
-    }
-    @media only screen and (max-width: 1000px) {
-        font-size: 32px;   
-    }
-    @media only screen and (max-width: 900px) {
-        font-size: 31px;  
-    }
-    @media only screen and (max-width: 800px) {
-        font-size: 30px;  
-    }
-    @media only screen and (max-width: 700px) {
-        font-size: 29px;    
-    }
-    @media only screen and (max-width: 600px) {
-        font-size: 28px;  
-    }
-    @media only screen and (max-width: 500px) {
-        font-size: 26px;   
-    }
-    @media only screen and (max-width: 400px) {
-        font-size: 24px;   
-    }
     @media only screen and (max-width: 360px) {
-        font-size: 20px;   
+        font-size: 20px;
+        
     }
 }
 .followUs-images {
@@ -387,10 +660,26 @@ span:hover {
     cursor: pointer;
 }
 
-
+/*------------------------------------------------FIND US---------------------------------------------------------------*/
+/*
+.container {
+    height: 20rem;
+    width: 100%;
+    position: absolute;
+    background-image: url(../img/map-swatch.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -30%;
+    //left: 50%;
+    
+    position: absolute;
+    color: #000;  
+    
+}
+*/
 /*------------------------------------------------JOIN BK SECTION--------------------------------------------------*/
 .join {
-   
+    //background: linear-gradient(to right,  rgba(47, 47, 47, 1),  rgba(47, 47, 47, .3));
     background: linear-gradient(to right bottom,  #00b6f1,  #007fa8);
     height: auto;
     margin-top: 0;
@@ -428,6 +717,7 @@ span:hover {
     @media only screen and (max-width: 400px) {
         height: 250px;
     }
+
     @media only screen and (max-width: 360px) {
         height: 250px;
     }
@@ -446,6 +736,7 @@ span:hover {
     padding-top: 5rem;
     margin-top: 0;
 
+   
     @media only screen and (max-width: 1200px) {
         font-size: 34px;
         padding-top: 3rem;
@@ -503,23 +794,35 @@ span:hover {
     list-style: none;
     width: 30%;
     font-size: 13px;
+
     @media only screen and (max-width: 800px) {
         width: 50%;
     }
+
     @media only screen and (max-width: 700px) {
         width: 50%;
     }
+
     @media only screen and (max-width: 600px) {
         width: 70%;
     }
+
     @media only screen and (max-width: 500px) {
         width: 60%;
     }
+
     @media only screen and (max-width: 500px) {
         width: 60%;
     }
     @media only screen and (max-width: 360px) {
         width: 100%;
+    }
+   
+}
+
+.join__textbox-social-list img {
+    @media only screen and (max-width: 360px) {
+        
     }
 }
 
@@ -530,14 +833,17 @@ span:hover {
     letter-spacing: 1px;
     font-family: sans-serif;
     border-radius: 5px;
+
     @media only screen and (max-width: 900px) {
         font-size: 12px;
         margin: 0 3px;
     }
+
     @media only screen and (max-width: 700px) {
         font-size: 10px;
         margin: 0 3px;
     }
+
     @media only screen and (max-width: 360px) {
         font-size: 8px;
         margin: 0 3px;
@@ -551,21 +857,28 @@ span:hover {
 
 .join__textbox-social-list li:nth-of-type(1) {
     background-color: #3B5998;
+
     @media only screen and (max-width: 1000px) {
         width: 30%;
     }
+
     @media only screen and (max-width: 900px) {
         width: 30%;
     }
+
     @media only screen and (max-width: 800px) {
         width: 30%;
     }
     @media only screen and (max-width: 700px) {
         width: 20%;
     }
+
     @media only screen and (max-width: 600px) {
         width: 40%;
     }
+
+    
+  
     @media only screen and (max-width: 360px) {
         width: 40%;
     } 
@@ -578,18 +891,22 @@ span:hover {
     @media only screen and (max-width: 1000px) {
         width: 30%;
     }
+
     @media only screen and (max-width: 900px) {
         width: 30%;
     }
+
     @media only screen and (max-width: 800px) {
         width: 30%;
     }
     @media only screen and (max-width: 700px) {
         width: 20%;
     }
+
     @media only screen and (max-width: 600px) {
         width: 40%;
     }
+
     @media only screen and (max-width: 360px) {
         width: 40%;
     }
@@ -602,18 +919,22 @@ span:hover {
     @media only screen and (max-width: 1000px) {
         width: 30%;
     }
+
     @media only screen and (max-width: 900px) {
         width: 30%;
     }
+
     @media only screen and (max-width: 800px) {
         width: 30%;
     }
     @media only screen and (max-width: 700px) {
         width: 20%;
     }
+
     @media only screen and (max-width: 600px) {
         width: 40%;
     }
+
     @media only screen and (max-width: 360px) {
         width: 40%;
     }
@@ -632,11 +953,14 @@ span:hover {
     @media only screen and (max-width: 1100px) {
         font-size: 27px;  
     }
+
     @media only screen and (max-width: 600px) {
         font-size: 25px;  
     }
+
     @media only screen and (max-width: 360px) {
-        font-size: 20px;   
+        font-size: 20px;
+        
     }
 }
 
@@ -651,62 +975,8 @@ span:hover {
     margin: 0 auto;
     width:100%;
 
-    @media only screen and (max-width: 1200px) {
-        height: 800px;
-        display: block;
-        padding: 0;
-    }
-
-    @media only screen and (max-width: 1100px) {
-        height: 700px;
-        display: block;
-        padding: 0;
-    }
-
-    @media only screen and (max-width: 1000px) {
-        height: 700px;
-        display: block;
-        padding: 0;
-    }
-
-    @media only screen and (max-width: 900px) {
-        height: 600px;
-        display: block;
-        padding: 0;
-    }
-
-    @media only screen and (max-width: 800px) {
-        height: 550px;
-        display: block;
-        padding: 0;
-    }
-
-    @media only screen and (max-width: 700px) {
-        height: 500px;
-        display: block;
-        padding: 0;
-    }
-
-    @media only screen and (max-width: 600px) {
-        height: 400px;
-        display: block;
-        padding: 0;
-    }
-
-    @media only screen and (max-width: 500px) {
-        height: 300px;
-        display: block;
-        padding: 0;
-    }
-
-    @media only screen and (max-width: 400px) {
-        height: 300px;
-        display: block;
-        padding: 0;
-    }
-
     @media only screen and (max-width: 360px) {
-        height: 310px;
+        height: 250px;
         display: block;
         padding: 0;
     }
@@ -721,58 +991,8 @@ span:hover {
     letter-spacing: 1px;
     text-align: center;
 
-    @media only screen and (max-width: 1300px) {
-        font-size: 85px;
-        padding-top: 1.5rem;
-    }
-
-    @media only screen and (max-width: 1200px) {
-        font-size: 75px;
-        padding-top: 1.5rem;
-    }
-
-    @media only screen and (max-width: 1100px) {
-        font-size: 75px;
-        padding-top: 1.5rem;
-    }
-
-    @media only screen and (max-width: 1000px) {
-        font-size: 65px;
-        padding-top: 1.5rem;
-    }
-
-    @media only screen and (max-width: 900px) {
-        font-size: 60px;
-        padding-top: 1.5rem;
-    }
-
-    @media only screen and (max-width: 800px) {
-        font-size: 55px;
-        padding-top: 1.5rem;
-    }
-
-    @media only screen and (max-width: 700px) {
-        font-size: 50px;
-        padding-top: 1.5rem;
-    }
-
-    @media only screen and (max-width: 600px) {
-        font-size: 40px;
-        padding-top: 1.5rem;
-    }
-
-    @media only screen and (max-width: 500px) {
-        font-size: 30px;
-        padding-top: 1.5rem;
-    }
-
-    @media only screen and (max-width: 400px) {
-        font-size: 30px;
-        padding-top: 1.5rem;
-    }
-
     @media only screen and (max-width: 360px) {
-        font-size: 30px;
+        font-size: 20px;
         padding-top: 1.5rem;
     }
 }
@@ -784,7 +1004,8 @@ span:hover {
     text-align: center;
     @media only screen and (max-width: 360px) {
         font-size: 20px;
-        padding-bottom: 1.5rem; 
+        padding-bottom: 1.5rem;
+        
     }
 }
 
@@ -792,60 +1013,6 @@ span:hover {
     width: 600px;
     height: 300px;
 
-    @media only screen and (max-width: 1300px) {
-        height: 250px;
-        width: 500px;
-    }
-
-    @media only screen and (max-width: 1200px) {
-        height: 250px;
-        width: 500px;
-    }
-
-    @media only screen and (max-width: 1100px) {
-        height: 300px;
-        width: 300px;
-    }
-
-    @media only screen and (max-width: 1100px) {
-        height: 200px;
-        width: 300px;
-    }
-
-    @media only screen and (max-width: 1000px) {
-        height: 200px;
-        width: 300px;
-    }
-
-    @media only screen and (max-width: 900px) {
-        height: 150px;
-        width: 250px;
-    }
-
-    @media only screen and (max-width: 800px) {
-        height: 120px;
-        width: 180px;
-    }
-
-    @media only screen and (max-width: 700px) {
-        height: 100px;
-        width: 150px;
-    }
-
-    @media only screen and (max-width: 600px) {
-        height: 80px;
-        width: 150px;
-    }
-
-    @media only screen and (max-width: 500px) {
-        height: 50px;
-        width: 150px;
-    }
-
-    @media only screen and (max-width: 400px) {
-        height: 50px;
-        width: 150px;
-    }
     @media only screen and (max-width: 360px) {
         height: 50px;
         width: 150px;
@@ -854,52 +1021,6 @@ span:hover {
 
 .break img:nth-of-type(1){
     margin-left: -15rem;
-
-    @media only screen and (max-width: 1200px) {
-        margin-left: 50%;
-        margin-top: 4%;
-    }
-
-    @media only screen and (max-width: 1100px) {
-        margin-left: 68%;
-        margin-top: 4%;
-    }
-
-    @media only screen and (max-width: 1000px) {
-        margin-left: 68%;
-        margin-top: 4%;
-    }
-
-    @media only screen and (max-width: 900px) {
-        margin-left: 73%;
-        margin-top: 4%;
-    }
-
-    @media only screen and (max-width: 800px) {
-        margin-left: 78%;
-        margin-top: 4%;
-    }
-
-
-    @media only screen and (max-width: 700px) {
-        margin-left: 78%;
-        margin-top: 4%;
-    }
-
-    @media only screen and (max-width: 600px) {
-        margin-left: 70%;
-        margin-top: 4%;
-    }
-
-    @media only screen and (max-width: 500px) {
-        margin-left: 30%;
-        margin-top: 4%;
-    }
-
-    @media only screen and (max-width: 400px) {
-        margin-left: 30%;
-        margin-top: 4%;
-    }
     @media only screen and (max-width: 360px) {
         margin-left: 30%;
         margin-top: 4%;
@@ -908,22 +1029,6 @@ span:hover {
 
 .break img:nth-of-type(2){
     margin-right: -15rem;
-
-    @media only screen and (max-width: 600px) {
-        margin-left: 5%;
-        margin-top: 4%;
-    }
-
-    @media only screen and (max-width: 500px) {
-        margin-left: 30%;
-        margin-top: 4%;
-    }
-
-    @media only screen and (max-width: 400px) {
-        margin-left: 30%;
-        margin-top: 4%;
-    }
-
     @media only screen and (max-width: 360px) {
         margin-left: 30%;
     }  
@@ -936,6 +1041,7 @@ span:hover {
     background-size: cover;
     height: auto;
     padding-top: 5rem;
+
     @media only screen and (max-width: 360px) {
         height: 250px;
         display: block;
@@ -954,22 +1060,8 @@ span:hover {
     color: #00B6F1;
     font-size: 50px;
 
-    @media only screen and (max-width: 900px) {
-        font-size: 40px;
-        padding-top: 5rem;
-    }
-
-    @media only screen and (max-width: 500px) {
-        font-size: 27px;
-        padding-top: 1rem;
-    }
-
-    @media only screen and (max-width: 400px) {
-        font-size: 25px;
-        padding-top: 1rem;
-    }
     @media only screen and (max-width: 360px) {
-        font-size: 25px;
+        font-size: 20px;
         padding-top: 5rem;
     }
 }
@@ -981,12 +1073,6 @@ span:hover {
     font-size: 30px;
     padding-bottom: 2rem;
 
-    @media only screen and (max-width: 900px) {
-        font-size: 25px;
-    }
-    @media only screen and (max-width: 600px) {
-        font-size: 20px;
-    }
     @media only screen and (max-width: 360px) {
         font-size: 15px;
     }
@@ -1000,13 +1086,6 @@ span:hover {
     color: #fff;
     padding: .5rem;
     border: none;
-
-    @media only screen and (max-width: 1000px) {
-        font-size: 18px;
-    }
-    @media only screen and (max-width: 700px) {
-        font-size: 16px;
-    }
     @media only screen and (max-width: 360px) {
         font-size: 10px;
     }
@@ -1016,39 +1095,16 @@ span:hover {
 
 .bacon {
     background-image: url(../img/tofu_amaranth_salad_recipe_2.jpg);
+    //padding: 100px 0 175px;
     background-repeat: no-repeat;
+   // background-size: 1100px 180px;
+    //background-position: 0 bottom;
     margin-bottom: -5px;
     background-size: cover;
     height: 40rem;
-
-    @media only screen and (max-width: 900px) {
-        height: 30rem;   
-    }
-
-    @media only screen and (max-width: 800px) {
-        height: 30rem;   
-    }
-
-
-    @media only screen and (max-width: 700px) {
-        height: 24rem;   
-    }
-
-
-    @media only screen and (max-width: 600px) {
-        height: 25rem;   
-    }
-
-    @media only screen and (max-width: 500px) {
-        height: 20rem;   
-    }
-
-    @media only screen and (max-width: 400px) {
-        height: 19rem;   
-    }
-    
     @media only screen and (max-width: 360px) {
-        height: 250px;   
+        height: 250px;
+       
     }
 }
 
@@ -1069,17 +1125,6 @@ span:hover {
     color: #fff;
     padding: .5rem;
     border: none;
-    @media only screen and (max-width: 800px) {
-        font-size: 17px;
-    }
-
-    @media only screen and (max-width: 600px) {
-        font-size: 15px;
-    }
-
-    @media only screen and (max-width: 400px) {
-        font-size: 12px;
-    }
     @media only screen and (max-width: 360px) {
         font-size: 10px;
     }
@@ -1098,32 +1143,35 @@ span:hover {
 .bacon__container-left h2, .bacon__container-middle h2, .bacon__container-right h2  {
     font-family: 'Anton', sans-serif;
     color: #000;
-
-    @media only screen and (max-width: 700px) {
-        font-size: 23px; 
-    }
-
-    @media only screen and (max-width: 600px) {
-        font-size: 21px; 
-    }
     @media only screen and (max-width: 360px) {
-        font-size: 20px; 
+        font-size: 20px;
+        
     }
 }
 
 /*--------------------------------------------------FOOTER SECTION--------------------------------------------------------------*/
 .footer {
+    //background: linear-gradient(to right bottom, rgba(241, 0, 141, .3), rgba(241, 0, 141, 1)) ;
     background: linear-gradient(to right bottom,#f1008d, #900054, #f666ba);
+    //background: linear-gradient(to bottom,#f1008d, #900054, #f666ba);
     background-repeat: no-repeat;
     color: #fff;
     font-weight: 100;
     height: auto;
+
     @media only screen and (max-width: 1200px) {
         padding: 2rem;
-    }
+    
+     }
+
     @media only screen and (max-width: 1100px) {
         padding: 2rem;
-    }
+    
+     }
+
+    
+
+
 }
 
 .footer__top-navigation {
@@ -1141,27 +1189,31 @@ span:hover {
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-size: 1.25rem;
+    //width: 85%;
     width:60%;
     @media only screen and (max-width: 800px) {
         font-size: 18px;
      
-    }
+      }
     @media only screen and (max-width: 600px) {
         font-size: 16px;
         width:35%;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+     @media only screen and (max-width: 500px) {
         font-size: 13px;
         width: 30%;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+
+     @media only screen and (max-width: 400px) {
+        
         font-size: 12px;
         width: 30%;
-    }
-    @media only screen and (max-width: 360px) {
+        
+     }
+     @media only screen and (max-width: 360px) {
         font-size: 10px;
         width: 30%;
-    }
+     }
 }
 
 .footer__top-navigation-list:hover {
@@ -1171,7 +1223,7 @@ span:hover {
 .footer__top-navigation-list li:nth-of-type(1){
     @media only screen and (max-width: 600px) {
         margin-left: -6rem;
-    }
+     }
 }
 
 .footer__middle-navigation {
@@ -1181,6 +1233,7 @@ span:hover {
 .footer__middle-navigation-main-list {
     display: flex;
     width: 100%;
+   
 }
 
 .footer__middle-navigation-left-list {
@@ -1195,14 +1248,20 @@ span:hover {
 
     @media only screen and (max-width: 600px) {
         font-size: 1rem;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+
+     @media only screen and (max-width: 500px) {
         font-size: .75rem;
         width: 10%;
-    }
-    @media only screen and (max-width: 360px) { 
+     }
+
+  
+
+      @media only screen and (max-width: 360px) {
+        
         width: 10%;
-    }
+        
+     }
 }
 
 .footer__middle-navigation-left-list img {
@@ -1211,6 +1270,8 @@ span:hover {
         margin-left: 4px;
      }
 }
+
+
 
 .footer__middle-navigation-left-list img:hover {
     background-color: #fff;
@@ -1255,6 +1316,7 @@ span:hover {
     display: flex;
     align-content: center;
     align-items: center;
+    
     justify-content: space-around;
     font-size: 1rem;
     width: 50%;
@@ -1262,30 +1324,39 @@ span:hover {
     @media only screen and (max-width: 500px) {
         width: 80%;
         font-size: 8px;
-    }
+     }
     
     @media only screen and (max-width: 400px) {
         width: 90%;
         font-size: 6px;
-    }
+     }
 
-    @media only screen and (max-width: 360px) {
-        width: 90%;   
-    }
+  
+     @media only screen and (max-width: 360px) {
+        
+        width: 90%;
+        
+     }
 }
 .footer__bottom-navigation-list li {
     border-right: 1px solid #000;
     padding-right: 1rem;
+
     @media only screen and (max-width: 1300px) {
         border: 0;
-    }
+     }
+
+    
     @media only screen and (max-width: 600px) {
         border: 0;
         font-size: 12px;
-    }
-    @media only screen and (max-width: 360px) {
-        font-size: 9px;  
-    }
+     }
+
+     @media only screen and (max-width: 360px) {
+        
+        font-size: 9px;
+        
+     }
 }
 
 .footer__bottom-navigation-list li:hover {
@@ -1295,11 +1366,13 @@ span:hover {
 .footer__copyright {
     @media only screen and (max-width: 600px) {
         font-size: 12px;
-    }
+     }
 
-    @media only screen and (max-width: 360px) {
-        font-size: 9px;  
-    }
+     @media only screen and (max-width: 360px) {
+        
+        font-size: 9px;
+        
+     }
 }
 
 
@@ -1311,8 +1384,14 @@ span:hover {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    //background: linear-gradient(to right, #00B6F1, #99ff00, rgb(241, 0, 141));
     background: rgba(0, 0, 0, 0.85);
     height: auto;
+    /*position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;*/
 }
 
 .menu__inner-navigation-logo img {
@@ -1322,36 +1401,36 @@ span:hover {
     @media only screen and (max-width: 1100px) {
         width: 100px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 900px) {
+     @media only screen and (max-width: 900px) {
         width: 98px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 800px) {
+     @media only screen and (max-width: 800px) {
         width: 90px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 800px) {
+     @media only screen and (max-width: 800px) {
         width: 80px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 600px) {
+     @media only screen and (max-width: 600px) {
         width: 55px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 500px) {
+     @media only screen and (max-width: 500px) {
         width: 50px;
         height: auto;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         width: 30px;
         height: auto;
-    }
+     }
 }
 
 .menu__inner-navigation-list {
@@ -1407,6 +1486,7 @@ span:hover {
 .menu__inner-navigation-list-list li {
     font-weight: bold;
     font-size: 32px;
+    //text-shadow: 1px 2px #000;
     padding-top: .5rem;
     padding-bottom: .5rem;
 
@@ -1426,7 +1506,8 @@ span:hover {
         font-size: 15px;
     }
     @media only screen and (max-width: 400px) {
-        font-size: 13px;   
+        font-size: 13px;
+        
     }
 }
 
@@ -1439,6 +1520,7 @@ span:hover {
     text-align: center;
     font-family: 'Anton', sans-serif;
     background-color: #00B6F1;
+    //background-color: #00B6F1;
     box-shadow: 0 1px 3px #000;
     color: #fff;
     font-size: 50px;
@@ -1446,36 +1528,6 @@ span:hover {
     margin: 0 auto;
     margin-top: 10rem;
     margin-bottom: 3rem;
-
-    @media only screen and (max-width: 1000px) {
-        font-size: 35px;
-        margin-top: 3rem; 
-    }
-
-    @media only screen and (max-width: 900px) {
-        font-size: 35px;
-        margin-top: 3rem; 
-    }
-    @media only screen and (max-width: 800px) {
-        font-size: 30px;
-        margin-top: 3rem; 
-    }
-    @media only screen and (max-width: 700px) {
-        font-size: 28px;
-        margin-top: 3rem; 
-    }
-    @media only screen and (max-width: 600px) {
-        font-size: 25px;
-        margin-top: 3rem; 
-    }
-    @media only screen and (max-width: 500px) {
-        font-size: 25px;
-        margin-top: 3rem; 
-    }
-    @media only screen and (max-width: 400px) {
-        font-size: 20px;
-        margin-top: 3rem; 
-    }
     @media only screen and (max-width: 360px) {
         font-size: 20px;
         margin-top: 3rem; 
@@ -1493,32 +1545,9 @@ span:hover {
 }
 
 .menu__images img {
-
-    @media only screen and (max-width: 700px) {
-        display: inline;
-        width: 40%;
-        height: 200px;
-    }
-    @media only screen and (max-width: 600px) {
-        display: inline;
-        width: 40%;
-        height: 150px;
-    }
-    @media only screen and (max-width: 500px) {
-        display: inline;
-        width: 40%;
-        height: 150px;
-    }
-
-    @media only screen and (max-width: 400px) {
-        display: inline;
-        width: 40%;
-        height: 150px;
-    }
     @media only screen and (max-width: 360px) {
-       display: inline;
-       width: 40%;
-       height: 150px;
+        height: 300px;
+        width: 85%;
     }
 }
 
@@ -1529,7 +1558,10 @@ span:hover {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0;
-    margin-top: 0;     
+    margin-top: 0;
+    @media only screen and (max-width: 360px) {
+        height: 15rem;
+     }   
 }
 
 .menu__two {
@@ -1537,7 +1569,10 @@ span:hover {
     background-color: #00a800;
     background-image: url(../img/R_strawberry.jpg);
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover;
+    @media only screen and (max-width: 360px) {
+        height: 15rem;
+     }
 }
 
 .menu__three {
@@ -1545,7 +1580,10 @@ span:hover {
     background-color: #a80092;
     background-image: url(../img/copy-space-2548743_1280.jpg);
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover;
+    @media only screen and (max-width: 360px) {
+        height: 15rem;
+     }
 }
 
 .menu__four {
@@ -1553,7 +1591,10 @@ span:hover {
     background-color: #a89700;
     background-image: url(../img/L_coffee.jpg);
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
+    @media only screen and (max-width: 360px) {
+        height: 15rem;
+     }
 }
 
 .menu__five {
@@ -1561,58 +1602,27 @@ span:hover {
     background-color: #a8000e;
     background-image: url(../img/our-food-header-img-large.png);
     background-repeat: no-repeat;
-    background-size: cover;  
-}
-
-.menu__one, 
-.menu__two, 
-.menu__three, 
-.menu__four, 
-.menu__five {
-
-    @media only screen and (max-width: 1024px) {
-        height: 30rem;
-    }
-
-    @media only screen and (max-width: 812px) {
-        height: 25rem;
-    }
-
-    @media only screen and (max-width: 736px) {
-        height: 20rem;
-    }
-
-    @media only screen and (max-width: 732px) {
-        height: 20rem;
-    }
-
-    @media only screen and (max-width: 640px) {
-        height: 20rem;
-    }
-
-    @media only screen and (max-width: 450px) {
-        height: 15rem;
-    }
-
-    @media only screen and (max-width: 400px) {
-        height: 15rem;
-    }
+    background-size: cover;
     @media only screen and (max-width: 360px) {
         height: 15rem;
-    } 
-}
-
-.menu__one-textbox, 
-.menu__two-textbox, 
-.menu__three-textbox, 
-.menu__four-textbox, 
-.menu__five-textbox  {
-    @media only screen and (max-width: 1366px) {
-        padding-left: 2rem;  
      }
+}
+
+.menu__one-textbox {
+    height: auto;
+    width: 20rem;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    margin-top: 20%;
+    left: 0;
     @media only screen and (max-width: 360px) {
-       padding-left: 2rem;  
-    }
+        left: 6%;
+        width: 10rem;
+        padding: 5px;
+        text-align: justify;
+        background-color: rgba(0, 182, 241, .4);
+     }
 }
 
 .menu__one-textbox h3, 
@@ -1620,13 +1630,6 @@ span:hover {
 .menu__three-textbox h3, 
 .menu__four-textbox h3, 
 .menu__five-textbox h3 {
-    @media only screen and (max-width: 1366px) {
-        font-size: 25px;
-    }
-
-    @media only screen and (max-width: 400px) {
-        font-size: 15px;
-    }
     @media only screen and (max-width: 360px) {
         font-size: 15px;
     }
@@ -1637,33 +1640,6 @@ span:hover {
 .menu__three-textbox p, 
 .menu__four-textbox p, 
 .menu__five-textbox p {
-
-    @media only screen and (max-width: 1100px) {
-        font-size: 16px;
-    }
-    @media only screen and (max-width: 1000px) {
-        font-size: 14px;
-    }
-    @media only screen and (max-width: 900px) {
-        font-size: 13px;
-    }
-
-    @media only screen and (max-width: 800px) {
-        font-size: 12px;
-    }
-    @media only screen and (max-width: 700px) {
-        font-size: 12px;
-    }
-    @media only screen and (max-width: 600px) {
-        font-size: 10px;
-    }
-    @media only screen and (max-width: 500px) {
-        font-size: 10px;
-    }
-
-    @media only screen and (max-width: 400px) {
-        font-size: 7px;
-    }
     @media only screen and (max-width: 360px) {
         font-size: 6px;
     }
@@ -1674,82 +1650,231 @@ span:hover {
 .menu__three-textbox a, 
 .menu__four-textbox a, 
 .menu__five-textbox a {
-
-    @media only screen and (max-width: 400px) {
-        font-size: 10px;
-    }
     @media only screen and (max-width: 360px) {
         font-size: 10px;
     }
 }
 
-.menu__one-textbox, 
-.menu__two-textbox, 
-.menu__three-textbox, 
-.menu__four-textbox, 
-.menu__five-textbox {
-    height: auto;
-    width: 20rem;
-    background-color: transparent;
+
+
+
+.menu__one-textbox a {
+    background-color: #00B6F1;
     color: white;
-    position: absolute;
-    margin-top: 20%;
-    left: 0; 
+    margin-top: 3rem;
+    padding: 3px 5px;
+   
 }
 
-.menu__one-textbox a, 
-.menu__two-textbox a,
-.menu__three-textbox a,
-.menu__four-textbox a,
-.menu__five-textbox a  {
+.menu__two-textbox {
+    height: auto;
+    width: 20rem;
+    background-color: pink;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 30%;
+    @media only screen and (max-width: 360px) {
+        margin-left: 6%;
+        width: 10rem;
+        padding: 5px;
+        text-align: justify;
+        background-color: rgba(0, 182, 241, .4);
+     }
+}
+
+.menu__two-textbox a {
     background-color: #00B6F1;
     color: white;
     margin-top: 3rem;
     padding: 3px 5px;
 }
 
+.menu__three-textbox {
+    height: auto;
+    width: 20rem;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 50%;
+    @media only screen and (max-width: 360px) {
+        margin-left: 6%;
+        width: 10rem;
+        padding: 5px;
+        text-align: justify;
+        background-color: rgba(0, 182, 241, .4);
+     }
+}
+
+.menu__three-textbox a {
+    background-color: #00B6F1;
+    color: white;
+    margin-top: 3rem;
+    padding: 3px 5px;
+}
+
+.menu__four-textbox {
+    height: auto;
+    width: 20rem;
+    background-color: pink;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 30%;
+    @media only screen and (max-width: 360px) {
+        margin-left: 6%;
+        width: 10rem;
+        padding: 5px;
+        text-align: justify;
+        background-color: rgba(0, 182, 241, .4);
+     }
+}
+
+.menu__four-textbox a {
+    background-color: #00B6F1;
+    color: white;
+    margin-top: 3rem;
+    padding: 3px 5px;
+}
+
+.menu__five-textbox {
+    height: auto;
+    width: 20rem;
+    background-color: pink;
+    position: absolute;
+    margin-top: 20%;
+    left: 0;
+
+    @media only screen and (max-width: 360px) {
+        left: 6%;
+        width: 10rem;
+        padding: 5px;
+        text-align: justify;
+        background-color: rgba(0, 182, 241, .4);
+     }
+}
+
+.menu__five-textbox a {
+    background-color: #00B6F1;
+    color: white;
+    margin-top: 3rem;
+    padding: 3px 5px;
+}
 /*--------------------------------------LACAFE-------------------------------------------------------*/
+/*.lacafe__delivery-main img {
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.lacafe__delivery {
+    position: relative;
+}
+.lacafe__delivery-left {
+    background: url(../img/BK_Gutter_Hashbrowns_0.jpg);
+    background-repeat: no-repeat;
+    height: 639px;
+    width: 900px;
+    position: absolute;
+    left: -45%;
+    top: 20%;
+}
+
+.lacafe__delivery-right {
+    background: url(../img/BK_Gutter_Hashbrowns.jpg);
+    background-repeat: no-repeat;
+    height: 639px;
+    width: 900px;
+    position: absolute;
+    right: -43%;
+    top: 20%;
+}
+
+
+
+.lacafe__voucher-main img {
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.lacafe__voucher {
+    position: relative;
+}
+.lacafe__voucher-left {
+    background: url(../img/Panel_Fries_L_0.jpg);
+    background-repeat: no-repeat;
+    height: 639px;
+    width: 900px;
+    position: absolute;
+    left: -35%;
+    top: 20%;
+}
+
+.lacafe__voucher-right {
+    background: url(../img/Panel_Fries_R_0.jpg);
+    background-repeat: no-repeat;
+    height: 639px;
+    width: 900px;
+    position: absolute;
+    right: -43%;
+    top: 20%;
+}
+
+*/
 
 .lacafe-header__inner-navigation {
     display: flex;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    //background: linear-gradient(to right, #00B6F1, #99ff00, rgb(241, 0, 141));
     background: rgba(0, 0, 0, 0.85);
     height: auto;
+    /*position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;*/
 }
 
 .lacafe-header__inner-navigation-logo img {
     width: 106px;
     height: auto;
+    
     @media only screen and (max-width: 1100px) {
         width: 100px;
         height: auto;
-    }
-    @media only screen and (max-width: 900px) {
+     }
+
+     @media only screen and (max-width: 900px) {
         width: 98px;
         height: auto;
-    }
-    @media only screen and (max-width: 800px) {
+    
+     }
+
+     @media only screen and (max-width: 800px) {
         width: 90px;
         height: auto;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+
+     @media only screen and (max-width: 800px) {
         width: 80px;
         height: auto;
-    }
-    @media only screen and (max-width: 600px) {
+     }
+
+     @media only screen and (max-width: 600px) {
         width: 55px;
         height: auto;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+
+     @media only screen and (max-width: 500px) {
         width: 50px;
         height: auto;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         width: 30px;
         height: auto;
-    }
+    
+     }
 }
 
 .lacafe-header__inner-navigation-list {
@@ -1758,34 +1883,34 @@ span:hover {
 
     @media only screen and (max-width: 1400px) {
         width: 50%;
-    }
-    @media only screen and (max-width: 1300px) {
+     }
+     @media only screen and (max-width: 1300px) {
         width: 60%;
-    }
-    @media only screen and (max-width: 1200px) {
+     }
+     @media only screen and (max-width: 1200px) {
         width: 60%;
-    }
-    @media only screen and (max-width: 1100px) {
+     }
+     @media only screen and (max-width: 1100px) {
         width: 50%;
-    }
-    @media only screen and (max-width: 1000px) {
+     }
+     @media only screen and (max-width: 1000px) {
         width: 53%;
-    }
-    @media only screen and (max-width: 900px) {
+     }
+     @media only screen and (max-width: 900px) {
         width: 55%;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+     @media only screen and (max-width: 800px) {
         width: 60%;
-    }
-    @media only screen and (max-width: 700px) {
+     }
+     @media only screen and (max-width: 700px) {
         width: 70%;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+     @media only screen and (max-width: 500px) {
         width: 100%;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         width: 100%;
-    }
+     }
 }
 .lacafe-header__inner-navigation-list-list {
     display: flex;
@@ -1805,6 +1930,7 @@ span:hover {
 .lacafe-header__inner-navigation-list-list li {
     font-weight: bold;
     font-size: 32px;
+    //text-shadow: 1px 2px #000;
     padding-top: .5rem;
     padding-bottom: .5rem;
 
@@ -1839,11 +1965,11 @@ span:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
-    @media only screen and (max-width: 400px) {
-        background-position-x: 60%;
-    }
-    
+    height: 35rem;
+    @media only screen and (max-width: 360px) {
+        height: 15rem;
+        background-size: contain;
+     }  
 }
 
 .lacafe__images {
@@ -1861,13 +1987,15 @@ span:hover {
 }
 
 .lacafe__images img {
+    /*height: 347.125px;
+    width: 727.600px;*/
     height: 450px;
     width: 600px;
     padding: 1rem;
     @media only screen and (max-width: 360px) {
         height: 300px;
         width: 100%;
-    } 
+     } 
 }
 
 .lacafe-images-images-textbox-one {
@@ -1885,50 +2013,167 @@ span:hover {
         left: 30%;
         font-size: 20px;
      }
+
+
+}
+/*
+.lacafe-images-images-textbox-two h2 {
+    color: #fff;
+    background-color: pink;
+    position: absolute; 
+}
+*/
+/*---------------------------------------DELIVERY----------------------------------------------------*/
+/*
+#map {
+    width: 100%;
+    height: 380px;
+    z-index: 0;
 }
 
-/*---------------------------------------DELIVERY----------------------------------------------------*/
-
 .delivery {
+    position: relative;
+    //background: linear-gradient(to right bottom, #00B6F1, #99ff00);
+}
+*/
+/*
+.delivery__postcode-list {
+    position: absolute;
+    right: 6.5%;
+    top: -40%;
+   
+    
+}
+.delivery__postcode-list-list {
+    display: flex;
+    //justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    //max-width: 1140px;
+    margin: 0 auto;
+    list-style: none;
+    width: 100%;
+    padding: .5rem;
+    font-size: 13px;
+    color: #414042;   
+}
+.delivery__postcode-list-list li {
+    margin-left: 1rem;
+    font-size: 18px;
+}
+
+
+.delivery__postcode-list-list a {
+    text-decoration: none;
+}
+
+.delivery__postcode {
+    background: linear-gradient(to right,  rgba(47, 47, 47, 1),  rgba(47, 47, 47, .4));
+    width: 980px;
+    margin: 5rem auto 0;
+    height: 100px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+*/
+/*
+.delivery__postcode-images {
+    margin-bottom: 3rem;
+}
+
+.delivery__postcode-logo img {
+    width: 102px;
+    height: auto;
+    padding-left: 1rem;
+}
+
+.delivery__postcode-bag h3 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+    padding-right: 1rem;
+}
+
+.delivery__postcode-bag a:link, .delivery__postcode-bag a:visited {
+    color:#fff;
+    text-decoration: none;
+}
+
+.delivery__postcode-input input {
+    border-radius: 3px;
+    border: 1px solid transparent;
+    height: 44px;
+    width: 325.26px;
+}
+
+.delivery__postcode-input button {
+    height: 44px;
+    width: 44px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+    
+}
+
+.delivery__bottom-heading h2 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    background-color: #00B6F1;
+    box-shadow: 0 1px 3px #000;
+    color: #fff;
+    font-size: 20px;
+    width: 20%;
+    margin: 3rem auto;
+    padding: 5px;
+}
+
+*/
+
+.delivery-header {
     background-image: url(../img/mcdelivery3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
-    padding-top: rem;
-    //padding-bottom: 5rem;
+    height: auto;
 
-    @media only screen and (max-width: 600px) {
+    
+
+     @media only screen and (max-width: 600px) {
         background-image: url(../img/mcdelivery3-600.png);
         background-repeat: no-repeat;
         background-size:cover;
         background-position-y: 0;
         background-color: #a0a0a0;
-    }
+     }
 
-    @media only screen and (max-width: 500px) {
+     @media only screen and (max-width: 500px) {
         background-image: url(../img/mcdelivery3-500.png);
         background-repeat: no-repeat;
         background-size:100% 50%;
         background-position-y: 10rem;
         background-color: #a0a0a0;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         background-image: url(../img/mcdelivery3-400.png);
         background-repeat: no-repeat;
         background-size:100% 40%;
         background-position-y: 8rem;
         background-color: #a0a0a0;  
-    }
+     }
 
-    @media only screen and (max-width: 360px) {
+     @media only screen and (max-width: 360px) {
         background-image: url(../img/mcdelivery3-360.png);
         background-repeat: no-repeat;
         background-size:100% 40%;
         background-position-y: 8rem;
         background-color: #a0a0a0;   
-    }
+     }
 }
 
 .delivery * {
@@ -1942,41 +2187,53 @@ span:hover {
     margin: 0 auto;
     width: 50%;
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    /*position: absolute;
+    left: 50%;
+    margin-top: 3%;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    transform: translate(-50%);*/
     border-radius: 3px;
     color: #fff;
+
     @media only screen and (max-width: 1300px) {
         width: 50%;
-    }
-    @media only screen and (max-width: 1200px) {
+     }
+     @media only screen and (max-width: 1200px) {
         width: 50%;
-    }
-    @media only screen and (max-width: 1100px) {
+     }
+     @media only screen and (max-width: 1100px) {
         width: 50%;
-    }
-    @media only screen and (max-width: 1000px) {
+     }
+     @media only screen and (max-width: 1000px) {
         width: 50%;
-    }
-    @media only screen and (max-width: 900px) {
+     }
+     @media only screen and (max-width: 900px) {
         width: 60%;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+     @media only screen and (max-width: 800px) {
         width: 60%;
-    }
-    @media only screen and (max-width: 700px) {
+     }
+     @media only screen and (max-width: 700px) {
         width: 70%;
-    }
-    @media only screen and (max-width: 600px) {
+     }
+
+     @media only screen and (max-width: 600px) {
         width: 70%;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+
+     @media only screen and (max-width: 500px) {
         width: 80%;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         width: 80%;
-    }
-    @media only screen and (max-width: 360px) {
+     }
+
+     @media only screen and (max-width: 360px) {
         width: 80%;
-    }
+     }
 } 
 
 .delivery__textbox h2 {
@@ -1984,175 +2241,199 @@ span:hover {
     font-family: 'Anton', sans-serif;
     color: #fff;
     font-size: 50px;
+    //padding-bottom: 1rem;
+    //padding-top: 5rem
+
     @media only screen and (max-width: 1300px) {
         font-size: 50px;
-    }
-    @media only screen and (max-width: 1200px) {
+     }
+     @media only screen and (max-width: 1200px) {
         font-size: 47px;
-    }
-    @media only screen and (max-width: 1100px) {
+     }
+     @media only screen and (max-width: 1100px) {
         font-size: 43px;
-    }
-    @media only screen and (max-width: 1000px) {
+     }
+     @media only screen and (max-width: 1000px) {
         font-size: 40px;
-    }
-    @media only screen and (max-width: 900px) {
+     }
+     @media only screen and (max-width: 900px) {
         font-size: 36px;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+     @media only screen and (max-width: 800px) {
         font-size: 33px;
-    }
-    @media only screen and (max-width: 700px) {
+     }
+     @media only screen and (max-width: 700px) {
         font-size: 30px;
-    }
-    @media only screen and (max-width: 600px) {
+     }
+
+     @media only screen and (max-width: 600px) {
         font-size: 27px;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+
+     @media only screen and (max-width: 500px) {
         font-size: 24px;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         font-size: 21px;
-    }
-    @media only screen and (max-width: 360px) {
+     }
+
+     @media only screen and (max-width: 360px) {
         font-size: 18px;
-    }
+     }
+
+    
 }
 
 .delivery__textbox p {
     padding-bottom: 2rem;
     font-size: 22px;
     font-family: sans-serif;
+
     @media only screen and (max-width: 1300px) {
         font-size: 20px;
-        padding: 1rem;   
-    }
-    @media only screen and (max-width: 1200px) {
+        padding: 1rem;
+        
+     }
+     @media only screen and (max-width: 1200px) {
         font-size: 20px;
         padding: 1rem;
-    }
-    @media only screen and (max-width: 1100px) {
+     }
+     @media only screen and (max-width: 1100px) {
         font-size: 20px;
         padding: 1rem;
-    }
-    @media only screen and (max-width: 1000px) {
+     }
+     @media only screen and (max-width: 1000px) {
         font-size: 20px;
         padding: 1rem;
-    }
-    @media only screen and (max-width: 900px) {
+     }
+     @media only screen and (max-width: 900px) {
         font-size: 18px;
         padding: 1rem;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+     @media only screen and (max-width: 800px) {
         font-size: 18px;
         padding: 1rem;
-    }
-    @media only screen and (max-width: 700px) {
+     }
+     @media only screen and (max-width: 700px) {
         font-size: 18px;
         padding: 1rem;
-    }
-    @media only screen and (max-width: 600px) {
+     }
+
+     @media only screen and (max-width: 600px) {
         font-size: 18px;
         padding: 1rem;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+
+     @media only screen and (max-width: 500px) {
         font-size: 16px;
         padding: 1rem;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         font-size: 14px;
         padding: 1rem;
-    }
-    @media only screen and (max-width: 360px) {
+     }
+
+     @media only screen and (max-width: 360px) {
         font-size: 12px;
         padding: 1rem;
-    }
+     }
 }
 
 .delivery__textbox img {
     padding-bottom: 2rem;
-    @media only screen and (max-width: 1300px) {
+
+    
+     @media only screen and (max-width: 1300px) {
         width: 400px;
         height: auto;
-    }
-    @media only screen and (max-width: 1200px) {
+     }
+     @media only screen and (max-width: 1200px) {
         width: 390px;
         height: auto;
-    }
-    @media only screen and (max-width: 1100px) {
+     }
+     @media only screen and (max-width: 1100px) {
         width: 390px;
         height: auto;
-    }
-    @media only screen and (max-width: 1000px) {
+     }
+     @media only screen and (max-width: 1000px) {
         width: 380px;
         height: auto;
-    }
-    @media only screen and (max-width: 900px) {
+     }
+     @media only screen and (max-width: 900px) {
         width: 350px;
         height: auto;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+     @media only screen and (max-width: 800px) {
         width: 320px;
         height: auto;
-    }
-    @media only screen and (max-width: 700px) {
+     }
+     @media only screen and (max-width: 700px) {
         width: 300px;
         height: auto;
-    }
-    @media only screen and (max-width: 600px) {
+     }
+
+     @media only screen and (max-width: 600px) {
         width: 290px;
         height: auto;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+
+     @media only screen and (max-width: 500px) {
         width: 250px;
         height: auto;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         width: 200px;
         height: auto;
-    }
-    @media only screen and (max-width: 360px) {
+     }
+
+     @media only screen and (max-width: 360px) {
         width: 150px;
         height: auto;
-    }
+     }
+
+
+
 }
 
 .delivery__textbox h2 span{
     font-family: sans-serif;
-    
+
     @media only screen and (max-width: 1300px) {
         font-size: 50px;
-    }
-    @media only screen and (max-width: 1200px) {
+     }
+     @media only screen and (max-width: 1200px) {
         font-size: 47px;
-    }
-    @media only screen and (max-width: 1100px) {
+     }
+     @media only screen and (max-width: 1100px) {
         font-size: 43px;
-    }
-    @media only screen and (max-width: 1000px) {
+     }
+     @media only screen and (max-width: 1000px) {
         font-size: 40px;
-    }
-    @media only screen and (max-width: 900px) {
+     }
+     @media only screen and (max-width: 900px) {
         font-size: 36px;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+     @media only screen and (max-width: 800px) {
         font-size: 33px;
-    }
-    @media only screen and (max-width: 700px) {
+     }
+     @media only screen and (max-width: 700px) {
         font-size: 30px;
-    }
-    @media only screen and (max-width: 600px) {
+     }
+
+     @media only screen and (max-width: 600px) {
         font-size: 27px;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+
+     @media only screen and (max-width: 500px) {
         font-size: 24px;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         font-size: 21px;
-    }
-    @media only screen and (max-width: 360px) {
+     }
+
+     @media only screen and (max-width: 360px) {
         font-size: 18px;
-    }
+     }
 }
 
 .delivery__inner-navigation {
@@ -2160,41 +2441,57 @@ span:hover {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    //background: linear-gradient(to right, #00B6F1, #99ff00, rgb(241, 0, 141));
     background: rgba(0, 0, 0, 0.85);
-    height: auto;  
+    height: auto;
+    /*position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;*/
+    
 }
 
 .delivery__inner-navigation-logo img {
     width: 106px;
     height: auto;
+    
+    
     @media only screen and (max-width: 1100px) {
         width: 100px;
         height: auto;
-    }
-    @media only screen and (max-width: 900px) {
+    
+     }
+
+     @media only screen and (max-width: 900px) {
         width: 98px;
         height: auto;
-    }
-    @media only screen and (max-width: 800px) {
+    
+     }
+
+     @media only screen and (max-width: 800px) {
         width: 90px;
         height: auto;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+
+     @media only screen and (max-width: 800px) {
         width: 80px;
         height: auto;
-    }
-    @media only screen and (max-width: 600px) {
+     }
+
+     @media only screen and (max-width: 600px) {
         width: 55px;
         height: auto;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+
+     @media only screen and (max-width: 500px) {
         width: 50px;
         height: auto;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         width: 30px;
         height: auto;
-    }
+    
+     }
 }
 
 .delivery__inner-navigation-list {
@@ -2203,34 +2500,34 @@ span:hover {
 
     @media only screen and (max-width: 1400px) {
         width: 50%;
-    }
-    @media only screen and (max-width: 1300px) {
+     }
+     @media only screen and (max-width: 1300px) {
         width: 60%;
-    }
-    @media only screen and (max-width: 1200px) {
+     }
+     @media only screen and (max-width: 1200px) {
         width: 60%;
-    }
-    @media only screen and (max-width: 1100px) {
+     }
+     @media only screen and (max-width: 1100px) {
         width: 50%;
-    }
-    @media only screen and (max-width: 1000px) {
+     }
+     @media only screen and (max-width: 1000px) {
         width: 53%;
-    }
-    @media only screen and (max-width: 900px) {
+     }
+     @media only screen and (max-width: 900px) {
         width: 55%;
-    }
-    @media only screen and (max-width: 800px) {
+     }
+     @media only screen and (max-width: 800px) {
         width: 60%;
-    }
-    @media only screen and (max-width: 700px) {
+     }
+     @media only screen and (max-width: 700px) {
         width: 70%;
-    }
-    @media only screen and (max-width: 500px) {
+     }
+     @media only screen and (max-width: 500px) {
         width: 100%;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         width: 100%;
-    }
+     }
 }
 .delivery__inner-navigation-list-list {
     display: flex;
@@ -2251,6 +2548,7 @@ span:hover {
 .delivery__inner-navigation-list-list li {
     font-weight: bold;
     font-size: 32px;
+    //text-shadow: 1px 2px #000;
     padding-top: .5rem;
     padding-bottom: .5rem; 
 
@@ -2280,8 +2578,6 @@ span:hover {
     text-shadow: 1px 2px #fff;
 }
 
-
-
 /*------------------------------CONTACT---------------------------------------------------------------------------*/
 
 .contact__main-photo {
@@ -2293,19 +2589,20 @@ span:hover {
 
     @media only screen and (max-width: 700px) {
         height: 30rem;
-    }
+     }
 
     @media only screen and (max-width: 600px) {
         height: 30rem;
-    }
+     }
 
-    @media only screen and (max-width: 500px) {
+     @media only screen and (max-width: 500px) {
         height: 20rem;
-    }
+     }
 
      @media only screen and (max-width: 400px) {
         height: 15rem;
-    }
+    
+     }
 }
 
 .contact__main {
@@ -2319,6 +2616,12 @@ span:hover {
     justify-content: center;
     background: rgba(0, 0, 0, 0.85);
     height: auto;
+    /*position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;*/
+
+    
 }
 
 .contact__inner-navigation-logo img {
@@ -2330,35 +2633,40 @@ span:hover {
         height: auto;
      }
 
-    @media only screen and (max-width: 900px) {
+     @media only screen and (max-width: 900px) {
         width: 98px;
         height: auto;
-    }
+    
+     }
 
-    @media only screen and (max-width: 800px) {
+     @media only screen and (max-width: 800px) {
         width: 90px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 800px) {
+     @media only screen and (max-width: 800px) {
         width: 80px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 600px) {
+     @media only screen and (max-width: 600px) {
         width: 55px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 500px) {
+     @media only screen and (max-width: 500px) {
         width: 50px;
         height: auto;
-    }
-    @media only screen and (max-width: 400px) {
+     }
+     @media only screen and (max-width: 400px) {
         width: 30px;
         height: auto;
-    }  
+    
+     }
+     
 }
+
+
 
 .contact__inner-navigation-list {
     width: 45%;
@@ -2447,6 +2755,7 @@ span:hover {
 .contact__main-left {
     width: 20%;
 
+    
     @media only screen and (max-width: 500px) {
         padding: 1rem;
         width: 30%;
@@ -2477,9 +2786,6 @@ span:hover {
 .contact__main-left-middle {
     text-align: center;
     padding-top: 3rem;
-    @media only screen and (max-width: 450px) {
-        font-size: 9px;
-    }
     @media only screen and (max-width: 400px) {
         font-size: 10px;
     }
@@ -2609,11 +2915,11 @@ span:hover {
     padding: 2px;
     @media only screen and (max-width: 500px) {
         font-size: 15px;
-    }
+     }
 
-    @media only screen and (max-width: 360px) {
+     @media only screen and (max-width: 360px) {
         font-size: 9px;
-    }
+     }
   }
   ::-moz-placeholder { /* Firefox 19+ */
     color: #5C5C5C;
@@ -2623,11 +2929,11 @@ span:hover {
     padding: 2px;
     @media only screen and (max-width: 500px) {
         font-size: 15px;
-    }
+     }
 
-    @media only screen and (max-width: 360px) {
+     @media only screen and (max-width: 360px) {
         font-size: 9px;
-    }
+     }
   }
   :-ms-input-placeholder { /* IE 10+ */
     color: #5C5C5C;
@@ -2637,11 +2943,11 @@ span:hover {
     padding: 2px;
     @media only screen and (max-width: 500px) {
         font-size: 15px;
-    }
+     }
 
-    @media only screen and (max-width: 360px) {
+     @media only screen and (max-width: 360px) {
         font-size: 9px;
-    }
+     }
   }
   :-moz-placeholder { /* Firefox 18- */
     color: #5C5C5C;
@@ -2651,11 +2957,11 @@ span:hover {
     padding: 2px;
     @media only screen and (max-width: 500px) {
         font-size: 15px;
-    }
+     }
 
-    @media only screen and (max-width: 360px) {
+     @media only screen and (max-width: 360px) {
         font-size: 9px;
-    }
+     }
   }
 
 /*------------------------------CHOICES---------------------------------------------------------------------------*/
@@ -2667,6 +2973,10 @@ span:hover {
     justify-content: center;
     background: rgba(0, 0, 0, 0.85);
     height: auto;
+    /*position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;*/
 }
 
 .choices__inner-navigation-logo img {
@@ -2676,37 +2986,38 @@ span:hover {
     @media only screen and (max-width: 1100px) {
         width: 100px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 900px) {
+     @media only screen and (max-width: 900px) {
         width: 98px;
         height: auto;
     
-    }
+     }
 
-    @media only screen and (max-width: 800px) {
+     @media only screen and (max-width: 800px) {
         width: 90px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 800px) {
+     @media only screen and (max-width: 800px) {
         width: 80px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 600px) {
+     @media only screen and (max-width: 600px) {
         width: 55px;
         height: auto;
-    }
+     }
 
-    @media only screen and (max-width: 500px) {
+     @media only screen and (max-width: 500px) {
         width: 50px;
         height: auto;
      }
-    @media only screen and (max-width: 400px) {
+     @media only screen and (max-width: 400px) {
         width: 30px;
         height: auto;
-    }
+    
+     }
 }
 
 .choices__inner-navigation-list {
@@ -2763,6 +3074,7 @@ span:hover {
 .choices__inner-navigation-list-list li {
     font-weight: bold;
     font-size: 32px;
+    //text-shadow: 1px 2px #000;
     padding-top: .5rem;
     padding-bottom: .5rem;
 
